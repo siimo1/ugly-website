@@ -1,0 +1,60 @@
+h1{ color: rgb(248, 215, 104); font-size:150px; background-image:url(https://jimsdogwash.net.au/wp-content/uploads/poop-1.jpg);
+
+}
+body{
+    background-color:black;
+    background-image: url(https://www.icegif.com/wp-content/uploads/icegif-2064.gif);
+    cursor: url(https://thumbs.dreamstime.com/z/cute-poop-cartoon-hand-drawn-43064730.jpg),width=20,height=30, auto;
+}
+
+img {
+    float: right;
+    margin-left: 200px;
+    margin-top:300px;
+    top: 250%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    animation: moveAround 3s linear infinite;
+  }
+  
+  @keyframes moveAround {
+    0% {
+      transform: translate(-50%, -50%) rotate(200deg) translate(150px) rotate(200deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg) translate(150px) rotate(-360deg);
+    }
+}
+ .word {
+    font-size: 100px;
+        position: relative;
+        animation: crazyMove 5s linear infinite;
+      }
+      
+      @keyframes crazyMove {
+        0% {
+          top: 0;
+          left: 0;
+          transform: rotate(0);
+        }
+        25% {
+          top: 0;
+          left: 50%;
+          transform: rotate(180deg);
+        }
+        50% {
+          top: 50%;
+          left: 50%;
+          transform: rotate(360deg);
+        }
+        75% {
+          top: 50%;
+          left: 0;
+          transform: rotate(540deg);
+        }
+        100% {
+          top: 0;
+          left: 0;
+          transform: rotate(720deg);
+        }
+      }
